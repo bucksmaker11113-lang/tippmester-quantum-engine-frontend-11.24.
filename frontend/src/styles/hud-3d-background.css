@@ -1,0 +1,54 @@
+/* Hová kerül: frontend/src/styles/hud-3d-background.css */
+
+/*
+  HUD háttér 3D mélységgel, lebegő elemekkel.
+  A komponensek (ChatPanelHUD, Chart stb.) fölött jelenik meg.
+*/
+
+.hud-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #1c1c1c, #0d0d0d 70%);
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
+/* Lebegő részecske animációk */
+.hud-floating {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #0af;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: floatParticle 6s infinite linear;
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px) scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px) translateX(0) scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* HUD glow effekt */
+.hud-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  box-shadow: inset 0 0 40px rgba(0, 170, 255, 0.15);
+  border-radius: inherit;
+}
