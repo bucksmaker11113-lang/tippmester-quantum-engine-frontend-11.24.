@@ -1,0 +1,40 @@
+/* Hová kerül: frontend/src/styles/hud-animations.css */
+
+/* HUD elemek finom lebegő animációi */
+
+.hud-float {
+  animation: hudFloat 4s ease-in-out infinite;
+}
+
+@keyframes hudFloat {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.9;
+  }
+}
+
+/* HUD pulzáló fény effekt */
+
+.hud-pulse {
+  animation: hudPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes hudPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.1);
+  }
+}
