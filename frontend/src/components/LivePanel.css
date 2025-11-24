@@ -1,0 +1,48 @@
+.live-panel {
+  background: #141414;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+  color: #fff;
+}
+
+.live-panel h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 22px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+}
+
+.live-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.live-item {
+  background: #1b1b1b;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
+}
+
+.live-item .match {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.live-item .odds {
+  margin-top: 5px;
+  color: #0af;
+}
+
+.live-item .status {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #ffb347;
+}
+
+.error {
+  color: #f66;
+}
