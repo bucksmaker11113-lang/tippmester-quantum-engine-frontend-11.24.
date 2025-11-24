@@ -1,0 +1,55 @@
+/* Hová kerül: frontend/src/components/KombiPanel.css */
+
+.kombi-panel {
+  background: #141414;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+  color: #fff;
+}
+
+.kombi-panel h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 22px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+}
+
+.kombi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kombi-item {
+  background: #1b1b1b;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
+}
+
+.kombi-item .match {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.kombi-item .odds {
+  margin-top: 5px;
+  color: #0af;
+}
+
+.kombi-item .stake {
+  margin-top: 5px;
+  color: #ffc107;
+}
+
+.kombi-item .return {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #8f8;
+}
+
+.error {
+  color: #f66;
+}
